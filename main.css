@@ -1,0 +1,50 @@
+.item1 { 
+    grid-area: header; 
+}
+
+.item2 { 
+    grid-area: header-start/ menu/ menu;
+    margin-left: 50px;
+    background-color: beige!important;
+}
+
+.item2 > img {
+  border-radius: 50%;
+  width: 170px;
+}
+.item2 > p{
+
+}
+.item3 { 
+    grid-area: main; 
+}
+
+.item4 { 
+    grid-area: right; 
+}
+
+.item5 { 
+    grid-area: middle; 
+}
+
+.item6 { 
+    grid-area: footer; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu middle middle middle footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #2196F3;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

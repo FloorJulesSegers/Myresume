@@ -8,22 +8,36 @@
   padding: 10px;
 }
 
-.grid-container > div {
-  background-color: grey;
-  text-align: center;
-}
-
-
 
 .item1 { 
     grid-area: header; 
+    background-color: #202020;
+    height: 160px;
+    
 }
 
+
+.pagetitle{
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #fff0db;
+  font-size:50px;
+  padding-left: 660px;
+}
+
+.pageundertitle{
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #fff0db;
+  font-size:30px;
+  padding-left: 730px;
+}
+
+
 .item2 { 
-    grid-area: header-start/ menu-start/menu-end;
+    grid-area: header-start/ menu-start/footer-end/menu-end;
     margin-left: 30px;
-    background-color: beige!important;
+    background-color: #fff0db;
     margin-right: 10px;
+    text-align: center;
 }
 
 .item2 > img {
@@ -38,7 +52,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 
 .contact{
   font-size: 15px;
-  border: 1px solid black;
 }
 
 .titletext{
@@ -46,8 +59,22 @@ font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .item3 { 
-    grid-area: main; 
+    grid-area: main;
+    background-color: grey; 
 }
 
 
@@ -55,6 +82,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 
 .item4 { 
     grid-area: footer;
-    width: max-content; 
+    background-color: grey;
 }
 
